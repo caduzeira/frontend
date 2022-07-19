@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabekas e Layout de tabelas</title>
+</head>
+<body>
+
+    <h1>Tabelas</h1>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Coluna 1</th><!--Titulos das colunas-->
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+            <tr>
+                <td align="center" colspan="3">Descrição</td><!--"colspan" fala numero de linhas que uma coluna vai ocupar-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="right"><!--Linhas da coluna-->
+                <td>1A</td><!--Colunas-->
+                <td>1B</td>
+                <td>1C</td>
+            </tr>
+            <tr align="center">
+                <td>2A</td>
+                <td>2B</td>
+                <td>2C</td>
+            </tr>
+            <tr>
+                <td>3A</td>
+                <td colspan="2">3BC</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td align="center" colspan="3">Final da tabela</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Tabela como layout</h2>
+    <table width="100%">
+        <tr height="80">
+            <td colspan="4" bgcolor="red">Cabeçalho</td>
+        </tr>
+        <tr height="300">
+            <td width="20"></td>
+            <td bgcolor="red">Conteudo 1</td>
+            <td bgcolor="blue">Conteudo 2</td>
+            <td width="20"></td>
+        </tr>
+        <tr>
+            <td bgcolor="green" colspan="4">Rodape</td>
+        </tr>
+    </table>
+</body>
+</html>
