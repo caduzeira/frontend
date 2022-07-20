@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala conosco</title>
+    <style type="text/css">
+        	* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+    </style>
+</head>
+<body>
+    <header><!--Cabeçalho-->
+        <h2>Cabeçalho</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="../aula-1-elementos-de-layouts/index.html">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="../aula-2-formularios/">contato</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Formulario</h1>
+            <p>Preencha os campos</p>
+
+            <form method="post"><!--Para fazer formularios-->
+                <div>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea name="mensagem" id="mensagem" name="mensagem" rows="7"></textarea>
+                </div>
+
+                <div>
+                    <span>Quais linguagens voce conhece</span>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </div>
+
+                <div>
+                    <span>Qual veiculo tu tem</span>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label>
+                </div>
+
+                <div>
+                    <span>Qual cor tu gosta</span>
+                    <select>
+                        <option>azul</option>
+                        <option>vermelho</option>
+                        <option>amarelo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit">
+                </div>
+           </form>
+
+        </article>
+    </section>
+    <footer>
+        <p>Feito por Carlos</p>
+    </footer>
+</body>
+</html>

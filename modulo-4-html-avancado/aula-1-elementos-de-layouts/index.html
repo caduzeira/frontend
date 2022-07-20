@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de layout</title>
+    <style type="text/css">
+        	* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+    </style>
+</head>
+<body>
+    <header><!--Cabeçalho-->
+        <h2>Cabeçalho</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="../aula-1-elementos-de-layouts/index.html">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="../aula-2-formularios/index.html">contato</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Titulo artigo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat molestias quasi! Nemo aperiam, quas inventore fugiat exercitationem quae dicta impedit minima dolorem possimus tempora deserunt aliquam sed eius nihil?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo consequuntur consequatur. Vel consequuntur minima quibusdam mollitia sunt sit harum at porro accusantium doloribus reprehenderit eius modi, nesciunt ex? Fugiat?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minus libero odio pariatur tenetur ducimus sed aliquid eaque? Culpa enim, omnis deleniti dolor cumque minus fugit iste voluptates amet beatae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quod. Culpa harum deserunt ducimus modi nemo fugiat possimus quaerat distinctio adipisci velit laborum, eligendi corporis facilis ut illum at accusamus?
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Feito por Carlos</p>
+    </footer>
+</body>
+</html>
