@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Fala conosco</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Formulario para contato</h1>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li><br>
+                <li><a href="">Contato</a></li><br>
+                <li><a href="">Home</a></li><br>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <center>
+                <form>
+                    <div>
+                        <label>Genero</label>
+                        <input class="genero" type="radio" id="html" name="fav_language" value="HTML"> Masculino
+                        <input class="genero" type="radio" id="css" name="fav_language" value="CSS"> Feminino
+                    </div>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="email" name="nome" id="nome" placeholder="Nome"/>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail"/>
+                    </div>
+                    <div class="data">
+                        <label>Data de nascimento</label>
+                            <div class="selecao">
+                                <select class="dia">
+                                    <option>Dia</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <select class="dia">
+                                    <option>Mes</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <select class="dia">
+                                    <option>Ano</option>
+                                    <option>1995</option>
+                                    <option>1996</option>
+                                    <option>1997</option>
+                                    <option>1998</option>
+                                    <option>1999</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div>
+                        <label>Pais</label>
+                        <select class="paises">
+                            <option>Pais</option>
+                            <option>Estado Unidos</option>
+                            <option>Brasil</option>
+                            <option>Canada</option>
+                            <option>Portugal</option>
+                            <option>Russia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Cidade"/>
+                    </div>
+                    
+                    <div class="vai">
+                        <input type="submit" placeholder="Receber novidades">
+                    </div>
+                </form>
+            </center>
+        </article>
+    </section>
+</body>
+</html>
