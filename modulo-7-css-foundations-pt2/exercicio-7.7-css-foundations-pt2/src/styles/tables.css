@@ -1,0 +1,45 @@
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-collapse: collapse;
+}
+
+table th{
+    background-color: rgb(5, 5, 129);
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+table tr{
+    text-align: center;
+}
+
+table td{
+    padding: 15px;
+    border: 1px solid;
+}
+
+table tbody tr:hover{ 
+    background-color: yellow;
+}
+
+table tr:first-child{
+    font-weight: bold;
+}
+
+table td:first-child{
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+

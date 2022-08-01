@@ -1,0 +1,42 @@
+
+table{
+    border: 1px solid;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 12px;
+    border-collapse: collapse;
+}
+
+table th{
+    background-color: rgb(4, 4, 131);
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+table td{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: right;
+}
+
+table tbody tr:hover{ 
+    background-color: yellow;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: beige;
+}
+
+table td:first-child{
+    text-align: left;
+    font-weight: bold;
+}
+
+table tfoot td{
+    font-weight: bold;
+    text-decoration:underline 2px;
+    background-color: rgb(255, 249, 242);
+}
+

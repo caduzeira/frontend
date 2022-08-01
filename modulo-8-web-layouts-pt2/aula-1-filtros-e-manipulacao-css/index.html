@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Layouts Fluidos</title>
+</head>
+<body>
+    
+    <h1>Elementos graficos</h1>
+
+    <section>
+        <h2>100% width / largura</h2>
+
+        <div class="grafico-1">
+            <img class="filtro" src="./src/image/32e671202c444e95db177acbbaf15780.jpg">
+        </div>
+        <div class="grafico-2">
+
+        </div>
+
+        <div class="vetor">
+            <img class="filtro-2" src="./src/image/4845746.jpg">
+        </div>
+
+        <canvas id="myCanvas" width="400" height="100" style="border:1px solid #000000;">
+        </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "50px Arial";
+            ctx.strokeText("Hello World", 10, 40);
+            </script>
+    </section>
+
+</body>
+</html>

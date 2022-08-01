@@ -1,6 +1,11 @@
-/*
-    filha > 
-    irmã + (adjacente) na sequencia
-    irma ~ (geral)  irmãos de modo geral
-    pseudo-classes:hover(quando passar o mouse em cima), :visited(visitado)
-*/
+    /*font:10px 'familia da fonte' bold;
+    */
+    
+    html{
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        letter-spacing: 25px;
+        line-height: 1.5px  ;
+    }

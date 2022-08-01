@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color:rgb(29, 29, 29);
+    width: 100vw;
+    height: 100vh;
+    /*overflow: hidden;/*tira barras de rolagem*/
+    overflow: overlay;
+}
+
+h1,h2,p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div{
+    margin: 0;
+}
+
+.width-100{
+    width: 100vw; /*width:100%*/
+    background-color: rgb(46, 46, 46);
+    height: 40vh;
+    /*box-sizing: border-box; /*considera borda e padding*/
+    padding: 20px 0;
+}
+
+nav{
+    width: 20vw;
+    float: left;
+    background-color: #d15e00;
+    padding: 10px;
+    height: 100%;
+}
+
+article{
+    width: 75vw;
+    float: left;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.fixed-width{
+    background-color: #d15e00;
+    width: 400px;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.background{
+    background: url(../image/png-transparent-geometric-shape-area-rhombus-plane-triangle-plane-angle-white-rectangle-thumbnail.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+div img{
+    width: 100%;
+}

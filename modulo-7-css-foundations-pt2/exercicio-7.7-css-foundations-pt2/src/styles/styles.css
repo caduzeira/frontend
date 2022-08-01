@@ -1,11 +1,7 @@
-/*
-    rgb = define cor tbm
-    rgba = cor com opacidade
-*/
-
+@import './tables.css';
 
 html{
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header{
@@ -36,14 +32,6 @@ section{
 }
 
 article{
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    float: right;
-    border-radius: 100%;
+    width: 70%;
+    float: left;
 }
-
-article:hover{
-    background: url(../image/download.jfif) center top no-repeat;
-}
-

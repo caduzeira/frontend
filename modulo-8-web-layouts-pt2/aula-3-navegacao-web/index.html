@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Layouts Fluidos</title>
+</head>
+<body>
+    
+    <h1>Elementos graficos</h1>
+
+    <section>
+        <h2>100% width / largura</h2>
+
+        <!--traget='nome-do-local'-->
+
+       
+        <div class="grafico-1">
+            <img class="filtro" src="./src/image/32e671202c444e95db177acbbaf15780.jpg">
+        </div>
+        <div class="grafico-2">
+
+        </div>
+
+        <div class="vetor vetor-2">
+            <img class="filtro-2" src="./src/image/4845746.jpg">
+        </div>
+
+        <div class="coluna"> 
+            <a style="color: white;" href="../aula-2-layout-semantico/index.html" target="meu-dado">Lista e Links
+            </a>
+        </div>
+        <div class="coluna">
+            <iframe name="meu-dado"></iframe>
+        </div>
+        <div class="coluna">
+            <iframe src="https://www.google.com/"></iframe>
+        </div>
+
+        <div class="coluna">
+            <!--iframes nome='nome-do-targe para navegar'-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_cjSafyjABs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <canvas id="myCanvas" width="400" height="100" style="border:1px solid #000000;">
+        </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "50px Arial";
+            ctx.strokeText("Hello World", 10, 40);
+            </script>
+    </section>
+
+</body>
+</html>
