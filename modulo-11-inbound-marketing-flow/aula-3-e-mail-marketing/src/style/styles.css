@@ -1,0 +1,17 @@
+body {
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto;
+    width: 50%;
+}
+
+tbody {
+    background-color: rgb(86, 104, 153);
+}
+
+table th{
+    background-color: white;
+    width: 100%;
+}
