@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function calculoMedia(notas){
+        var soma = 0
+        for(c = 0; c < notas.length; c++){
+        soma += notas[c]
+        }
+
+        media = soma / notas.length
+
+    return media;
+    }
+
+
+    function aprovacao(notas){
+
+        let media = calculoMedia(notas)
+
+        let condicao = media >= 7 ? "Aprovado" : "Reprovado";
+
+    return condicao
+    }
+
+    // Função Recursiva
+
+    function contagemRegressiva(numero){
+        console.log(numero);
+
+        let proximoNumero = numero - 1
+
+        if(numero > 0)
+        contagemRegressiva(proximoNumero);
+    }
+
+    contagemRegressiva(10)
+
+    </script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 ## Operadores
-- Soma
-- Subtração
-- Multiplicar
-- Dividir
-- Módulo (resto de divisão)
+- Soma +
+- Subtração -
+- Multiplicar *
+- Dividir /
+- Módulo (resto de divisão) %
 - Math: random(), round(), sqrt()
 
 * Atribuição
@@ -23,3 +23,4 @@ Subtrai 1 --
 - Menor que <
 - Maior ou igual >=
 - Menor ou igual <=
+- diferença !== (valor e tipo)
