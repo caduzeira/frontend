@@ -1,0 +1,6 @@
+select.form-control,input.form-control{
+    margin-bottom: 1rem;
+    display: block;
+    color: white;
+    background-color: transparent;
+}

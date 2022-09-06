@@ -1,0 +1,71 @@
+@import './form.css';
+
+.card{
+    width: 30%;
+    float: left;
+    margin: 5px;
+}
+
+header{
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    border-bottom: 1px solid rgb(105, 105, 105);
+}
+
+header h1{
+    color: white;
+}
+
+header li{
+    margin-top: 15px;
+}
+
+header li a{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+header li a:hover{
+    color: yellow;
+}
+
+.contato{
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+#sobre{
+    padding-top:  6rem;
+    padding-bottom: 10px;
+}
+
+#sobre img{
+    border-radius: 5px;
+}
+
+#produtos{
+    padding-top:  2rem;
+}
+
+.card{
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 5px;
+}
+
+#contato{
+    padding-top:  6rem;
+    padding-bottom: 10px;
+}
+
+li .btn-primary{
+    margin-bottom: 5px;
+}
+
+
+

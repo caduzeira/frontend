@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h1>Logo</h1>
+
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end align-items-center ">
+                        <li class="nav-item"><a class="" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="btn btn-primary" href="#contato">Contatos </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="carousel">
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="ratio ratio-21x9">
+                          <img src="./src/img/2400x1800a.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                          <h5>Lorem ipsum dolor</h5>
+                          <a href="" class="btn btn-link-dark stretched-link">Call to action</a><!--Transforma toda area do conteiner em clicavel-->
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                          <img src="./src/img/VOLKSWAGENSantana-2467_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                          <img src="./src/img/VOLKSWAGENSantana-2467_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <a name="" id="" class="btn btn-primary float-start" href="#" role="button">Botao 1</a>
+            <div class="clearfix"></div>
+            <a name="" id="" class="btn btn-dark float-end" href="#" role="button">Botao 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./src/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleFade')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: true
+        })
+    </script>
+</body>
+</html>

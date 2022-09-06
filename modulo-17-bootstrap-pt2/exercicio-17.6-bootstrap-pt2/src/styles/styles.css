@@ -1,0 +1,54 @@
+header{
+    background-color: rgb(44, 44, 184);
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    filter: drop-shadow(5px 2px 5px black);
+    border-bottom-left-radius: 10px;
+}
+
+#carousel{
+    background-color: rgb(241, 241, 241);
+}
+
+input,select{
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.card{
+    width: 30%;
+    float: left;
+    margin: 5px;
+    border-top-left-radius: 10px;
+}
+
+
+.btn-cadastro{
+    color: rgb(245, 134, 7);
+}
+
+#sobre{
+    padding-top: 10px;
+}
+
+#sobre img{
+    border-radius: 10px;
+}
+
+#produtos{
+    background-color: rgb(241, 241, 241);
+    padding-top: 15px;
+}
+
+#produtos img{
+    border-top-left-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header h1{
+    color: white;
+}

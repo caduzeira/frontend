@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./src/bootstrap/bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="./src/font-awesome/fontawesome/css/all.min.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header class="">
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-4 col-md-6">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col col-sm-6 col-md-6">
+                        <ul class="nav justify-content-end mt-3">
+                            <li class="nav-item px-4"><a class="" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="" href="#sobre">Sobre</a></li>
+                            <li class="nav-item px-4"><a class="" href="#home">Home</a></li>
+                            <li class="nav-item">
+                                <a class="btn-cadastro"  data-bs-toggle="modal" href="produto-1" data-bs-target="#modal-1" href="#cadastro">
+                                    <span><i class="fa-solid fa-door-open"></i></span>
+                                    Cadastro
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="ratio ratio-16x9">
+                                <img src="./src/img/pexels-pixabay-270348.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <img src="./src/img/pexels-neo-2653362.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="ratio ratio-16x9">
+                                <img src="./src/img/pexels-pixabay-270348.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h1>Sobre</h1>
+            <div class="row">
+                <div class="col col-sm-12 col-md-6">
+                    <img src="./src/img/pexels-designecologist-1779487.jpg" alt="">
+                </div>
+                <div class="col col-sm-12 col-md-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a accusantium laborum totam esse. Ratione molestiae quas magni quam ea minus, dicta odio voluptate ex odit! Id commodi dolorum repudiandae?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Produtos</h1>
+                    <div class="card">
+                        <img src="./src/img/pexels-designecologist-1779487.jpg" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a href>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./src/img/pexels-designecologist-1779487.jpg" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">orem ipsum, dolor sit amet consectetur</p>
+                            <a class="btn btn-primary" href="produto-2">Ver produto</a href>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/img/pexels-designecologist-1779487.jpg" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">orem ipsum, dolor sit amet consectetur</p>
+                            <a class="btn btn-primary" href="produto-3">Ver produto</a href>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" tabindex="-1" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cadastro</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <form class="form">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" name="nome" placeholder="Nome">
+                                    </div>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" name="telefone" placeholder="Telefone">
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group">
+                                            <input required type="text" class="form-control" name="nome" placeholder="Digite seu nome">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="nome" placeholder="Digite seu CPF">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="endereco">Endereço completo</label>
+                                        <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Endereço completo">
+                                    </div>
+                                </div>
+        
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="cidade">Cidade</label>
+                                        <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade">
+                                    </div>
+                                    <div class="col">
+                                        <label for="estado">Estado</label>
+                                        <select name="estado" id="estado" class="form-control">
+                                            <option value="">Selecione um estado:</option>
+                                            <option value="sp">SP</option>
+                                            <option value="al">AL</option>
+                                            <option value="mg">MG</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="cep">CEP</label>
+                                        <input type="text" id="cep" placeholder="Digite seu CEP" name="cep" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input type="checkbox" name="promo" id="promo">
+                                            <label class="form-check-labek" for="promo">Aceito receber informações</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-lg btn-success">Solicitar contato</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./src/font-awesome/fontawesome/js/all.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleFade')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: true
+        })
+    </script>
+</body>
+</html>

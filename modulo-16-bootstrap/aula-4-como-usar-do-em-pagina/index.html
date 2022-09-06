@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h1>Logo</h1>
+
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contatos </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Sobre nós</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aliquam, deserunt saepe temporibus delectus odio voluptates quas tempora voluptatem quam doloremque sint excepturi recusandae? Magnam neque dolore vero amet aut.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aliquam, deserunt saepe temporibus delectus odio voluptates quas tempora voluptatem quam doloremque sint excepturi recusandae? Magnam neque dolore vero amet aut.</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="img-fluid" src="./src/img/pexels-tolga-aslantürk-13378457.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Produtos</h1>
+                    <div class="card">
+                        <img src="./src/img/pexels-tolga-aslantürk-13378457.jpg" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a href>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./src/img/pexels-tolga-aslantürk-13378457.jpg" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">orem ipsum, dolor sit amet consectetur</p>
+                            <a class="btn btn-primary" href="produto-2">Ver produto</a href>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./src/img/pexels-tolga-aslantürk-13378457.jpg" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">orem ipsum, dolor sit amet consectetur</p>
+                            <a class="btn btn-primary" href="produto-3">Ver produto</a href>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h1>Contato</h1>
+                    <p>Fico interessado Preencha os campos do formulario para receber uma cotação</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Nome">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="telefone" placeholder="Telefone">
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success">Solicitar contato</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                        <h1 class="modal-title">Produto 1</h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Modelo</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ford Escort</td>
+                                <td>
+                                    <img src="./src/img/"
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ford Galaxie</td>
+                                <td>R$100.000</td>
+                            </tr>
+                            <tr>
+                                <td>Ford LTD</td>
+                                <td>R$100.000</td>
+                            </tr>
+                       </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
