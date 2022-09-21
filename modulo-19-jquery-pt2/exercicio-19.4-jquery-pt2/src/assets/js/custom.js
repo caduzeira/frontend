@@ -83,12 +83,12 @@ $(document).ready(function(){
    $('body').on('blur','#nome',function(){
       let nome = $(this).val()
 
-      if(nome.length < 2){
-         $(this).addClass('erro')
-         $('#helpNome').text('Nome invalido')
-      }else{
+      if(nome.length > 2){
          $(this).removeClass('erro')
          $('#helpNome').text('')
+      }else{
+         $(this).addClass('erro')
+         $('#helpNome').text('Nome invalido')
       }
    })
    
