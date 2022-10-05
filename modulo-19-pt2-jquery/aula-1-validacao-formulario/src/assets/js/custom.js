@@ -101,51 +101,38 @@ $(document).ready(function(){
       const inputName = $('#nome')
       const inputEmail = $('#email')
 
-      if(inputEmail.hasClass('invalid')){
+      validate(inputName)
+      validate(inputEmail)
 
+      if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')){
+         return false
+         console.log('verifique campos obrigatorios')
+      }else{
+         $(this).submit()
       }
    })
 
-   $('body').on('blur','#nome',function(){
-      if($(this).val() == ''){
+   function validate (elem){
+      if(elem.val()==''){
 
-         console.log('o campo de nome é obrigatorio')
+         console.log('o campo' +  ' ' + elem.attr('name') + ' ' + 'é obrigatorio')
 
-         $(this).addClass('invalid')
+         elem.addClass('invalid')
       }else{
-         
-         console.log('Tudo certo')
-      
-         $(this).removeClass('invalid')
+         elem.removeClass('invalid')
       }
+   }
+
+   $('body').on('blur','#nome',function(e){
+      validate($(this))
    })
 
-   $('body').on('blur','#email',function(){
-      if($(this).val() == ''){
-
-         console.log('o campo de email é obrigatorio')
-
-         $(this).addClass('invalid')
-      }else{
-         
-         console.log('Tudo certo')
-      
-         $(this).removeClass('invalid')
-      }
+   $('body').on('blur','#email',function(e){
+      validate($(this))
    })
 
-   $('body').on('blur','#cpf',function(){
-      if($(this).val() == ''){
-
-         console.log('o campo de email é obrigatorio')
-
-         $(this).addClass('invalid')
-      }else{
-         
-         console.log('Tudo certo')
-      
-         $(this).removeClass('invalid')
-      }
+   $('body').on('blur','#cpf',function(e){
+      validate($(this))
    })
 
 })
