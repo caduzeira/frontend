@@ -1,0 +1,44 @@
+.cars{
+
+    ul {
+        list-style-type: none;
+        display: block;
+        
+        height: 250px;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    li{
+        color: $color-02;
+        display: block;
+        float: left;
+        border-radius: 5px;
+        margin: 1rem 1.5rem;
+        padding: 5px;
+        border: 1px solid $border;
+
+        .img-container{
+            display:block;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        a {
+            background-color: $color-01;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            padding: 4px 8px;
+            width: 96%;
+            text-align: center;
+            text-decoration: none;
+        }
+
+    }
+
+    img{
+        border-radius: 12px;
+    }
+
+}

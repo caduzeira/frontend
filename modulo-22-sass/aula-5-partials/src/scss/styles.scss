@@ -1,0 +1,10 @@
+@import './reset';
+@import './vars';
+
+body{
+    background-color: $bkg;
+    color: $color-01;
+    font-family: $font;
+}
+
+@import './cars'

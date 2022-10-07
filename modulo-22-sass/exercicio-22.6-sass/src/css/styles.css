@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+header {
+  background-color: rgb(195, 195, 245);
+  height: 150px;
+}
+header .container {
+  margin: 0 auto;
+}
+
+.principal {
+  margin-top: 40px;
+  padding: 10px;
+  background-color: black;
+}
+.principal h2 {
+  color: rgb(142, 142, 255);
+}
+.principal h3 {
+  color: white;
+}
+.principal img {
+  width: 100%;
+}
+
+.cars ul {
+  list-style-type: none;
+  display: block;
+  height: 250px;
+  padding: 1rem 0;
+  width: 100%;
+}
+.cars li {
+  color: white;
+  display: block;
+  float: left;
+  border-radius: 5px;
+  margin: 1rem 1.5rem;
+  padding: 5px;
+  border: 1px solid black;
+}
+.cars li .img-container {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.cars li a {
+  background-color: rgb(142, 142, 255);
+  border-radius: 5px;
+  color: white;
+  display: block;
+  padding: 4px 8px;
+  width: 96%;
+  text-align: center;
+  text-decoration: none;
+}
+.cars img {
+  border-radius: 12px;
+}
+
+/*# sourceMappingURL=styles.css.map */
