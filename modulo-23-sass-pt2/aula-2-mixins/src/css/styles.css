@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: blue;
+  color: red;
+  font-family: Arial;
+}
+
+.block-area {
+  display: block;
+}
+.block-area .block {
+  border: 1px solid rgb(255, 209, 6);
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  background-color: green;
+}
+.block-area .block h2 {
+  color: rgb(255, 209, 6);
+}
+.block-area .block-02 {
+  width: 500px;
+  border: 1px solid blue;
+  background-color: rgb(255, 209, 6);
+  color: white;
+  height: 500px;
+}
+
+/*# sourceMappingURL=styles.css.map */
