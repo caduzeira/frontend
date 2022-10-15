@@ -15,7 +15,8 @@ $(document).ready(function(){
          })
         }else{
             $('#email').css({
-                'border':'1px solid red'
+                'border':'1px solid red',
+                'background-color':'red'
             })
         }
     })

@@ -1,0 +1,167 @@
+header h1 {
+  font-size: 30px;
+  color: white;
+}
+header .navbar {
+  box-shadow: 4px 5px 20px black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(125, 0, 150);
+  padding: 10px;
+}
+header .navbar-collapse {
+  padding: 5px;
+  flex-grow: 0;
+}
+header .nav-link {
+  color: white;
+}
+
+#sobre-nos {
+  width: 100%;
+  height: 650px;
+}
+#sobre-nos .message-area {
+  width: 35%;
+  margin-top: 70px;
+  background-color: rgba(236, 236, 236, 0.4);
+  padding: 5px;
+  border-radius: 20px;
+}
+#sobre-nos .accordion {
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  margin-top: 100px;
+  width: 250px;
+}
+#sobre-nos .container-fluid {
+  width: 98%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: url("../img/pexels-david-iglesias-13407327.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  background-size: 100%;
+}
+
+#produto {
+  margin-top: 50px;
+}
+#produto .owl-carousel {
+  margin-top: 10px;
+}
+#produto .featured-item {
+  padding: 10px;
+  border: 1px solid rgb(139, 139, 139);
+  width: 95%;
+  border-radius: 5px;
+  text-align: center;
+}
+#produto .owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+#produto .owl-theme .owl-dots .active span {
+  background-color: #3a8bcd !important;
+}
+#produto .owl-theme .owl-dots .owl-dot span {
+  background-color: #aaa;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin: 0px 5px;
+  outline: none;
+}
+
+#produto img {
+  width: 100%;
+  height: 40%;
+  border-radius: 5px;
+}
+#produto a {
+  text-decoration: none;
+}
+
+#contato {
+  margin-top: 45px;
+  width: 100%;
+  background-color: rgb(125, 0, 150);
+  padding: 40px;
+}
+#contato .container {
+  padding: 10px;
+}
+#contato .line-area {
+  border-top: 3px solid rgb(255, 255, 255);
+  margin-bottom: 25px;
+}
+#contato .text-contato-area {
+  color: white;
+  text-align: center;
+}
+#contato .input-area {
+  margin-left: 10%;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #d7edff;
+}
+.footer ul {
+  padding: 0px;
+  margin: 0px;
+}
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+.footer .logo img {
+  max-width: 100%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.footer .footer-menu {
+  margin-bottom: 40px;
+}
+.footer .footer-menu ul li {
+  margin: 0px 15px;
+}
+.footer .footer-menu a {
+  font-size: 13px;
+  color: #7a7a7a;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.footer .footer-menu a:hover {
+  color: #3a8bcd;
+  text-decoration: none;
+}
+.footer .social-icons {
+  margin-bottom: 60px;
+}
+.footer .social-icons ul li {
+  margin: 0px 10px;
+}
+.footer .social-icons a {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  background-color: #aaa;
+  text-align: center;
+  display: inline-block;
+  line-height: 33px;
+  border-radius: 50%;
+  font-size: 13px;
+  transition: all 0.5s;
+}
+.footer .social-icons a:hover {
+  background-color: #3a8bcd;
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+/*sass ./src/scss/styles.scss ./src/css/styles.css*/
+  /*Execultar comando para transforma em css*/
