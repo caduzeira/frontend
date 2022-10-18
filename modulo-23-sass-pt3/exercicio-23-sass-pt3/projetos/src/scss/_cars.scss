@@ -1,0 +1,54 @@
+@mixin theme ($theme:$bg-color-2, $color:$color-2) {
+    background-color: $theme;
+    color: $color;
+}
+
+.cars{
+    @include theme;
+    width: 100%;
+    height: 540px;
+    &__container{
+        width: 100%;
+        padding: 10px 0;
+        background-color: $bg-color-2;
+    }
+    &__title{
+        color: $color;
+    }
+    &__list{
+        padding: 10px;
+        border-radius: 12px;
+        margin-top: 10px;
+        list-style-type:none;
+        display: block;
+    }
+    &__item{
+        border-radius: 12px;
+        width: calc(95% / 3);
+        float: left;
+        margin-left: 10px;
+        text-align: center;
+        @media(max-width:999px){
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    &__img-container{
+        border-radius: 10px;
+        background-color: $bg-color-5;
+        padding: 5px;
+        overflow: hidden;
+        height: 450px;
+    }
+    &__image{
+        border-radius: 12px;
+        width: 100%;
+        height: 400px;
+    }
+    &__button{
+        margin-top: 50px;
+        width: 50px;
+        color: $color-2;
+    }
+}

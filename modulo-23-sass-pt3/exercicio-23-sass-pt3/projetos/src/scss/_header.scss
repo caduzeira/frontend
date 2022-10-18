@@ -1,0 +1,13 @@
+.header{
+    
+    &__container{
+        padding: 25px;
+        background-color: $bg-color;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    &__title{
+        color: $color;
+    }
+   
+}
