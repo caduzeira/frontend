@@ -1,0 +1,38 @@
+.header{
+    width: 100%;
+    height: 90px;
+    &__container{
+        background-color: red;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    &__title{
+        color: white;
+        margin: 0;
+    }
+
+    &__nav{
+        background-color: red;
+        
+        &--button{
+            color: white;
+            margin-right: 20px;
+            border-radius: 12px;
+            padding: 10px;
+            color: rgb(112, 112, 112);
+            text-decoration: none;
+            background-color: aliceblue;
+
+            &:hover{
+                background-color: rgb(1, 11, 153);
+                color: white;
+                padding: 15px;
+            }
+        }
+    }
+}

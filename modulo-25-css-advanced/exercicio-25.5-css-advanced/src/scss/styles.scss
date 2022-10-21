@@ -1,0 +1,47 @@
+@import './vars';
+@import './reset';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-default;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+h2{
+    margin-top: 4rem;
+}
+
+@import './header';
+
+header,
+section,
+footer{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+#sobre{
+    background-color: $bg-color;
+}
+
+#produtos{
+    
+}
+
+@import './vitrine';
