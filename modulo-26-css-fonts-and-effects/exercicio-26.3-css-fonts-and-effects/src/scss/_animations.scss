@@ -1,0 +1,20 @@
+@keyframes toTop{
+    from{
+        top:0;
+    }
+    to{
+        top:-1rem
+    }
+}
+
+@keyframes firstItem{
+    from{
+        left: -999px;
+        opacity: .1;
+    }
+
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}

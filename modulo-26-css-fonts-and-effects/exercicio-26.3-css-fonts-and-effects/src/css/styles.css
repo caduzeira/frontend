@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@keyframes toTop {
+  from {
+    top: 0;
+  }
+  to {
+    top: -1rem;
+  }
+}
+@keyframes firstItem {
+  from {
+    left: -999px;
+    opacity: 0.1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(48, 48, 161);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 6px;
+  color: white;
+}
+
+h2 {
+  margin-top: 4rem;
+}
+
+#root,
+header,
+section,
+footer {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+section {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+header .container {
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header .container .hero {
+  align-items: flex-end;
+  background-image: url("../img/banner-lance-me.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 27.5rem;
+  display: flex;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+header .container .hero h1 {
+  padding: 1rem 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  align-items: center;
+  margin-top: 10px;
+}
+nav .item {
+  text-decoration: none;
+  position: relative;
+  background-color: white;
+  padding: 9px;
+  border-radius: 12px;
+}
+nav .item:hover {
+  background-color: rgb(226, 95, 19);
+  color: white;
+}
+
+#sobre {
+  background-color: none;
+}
+#sobre .container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 0 2rem 2rem;
+}
+#sobre article h1 {
+  color: rgb(226, 95, 19);
+  text-align: left;
+  font-size: 1.5rem;
+}
+#sobre article p {
+  color: white;
+}
+
+#produtos {
+  background-color: rgb(196, 196, 196);
+}
+#produtos h1 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.vitrine {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.vitrine__item {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 20rem;
+  padding: 1rem;
+  position: relative;
+  margin-top: 20px;
+}
+.vitrine__item:hover {
+  -webkit-box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.4);
+  animation: toTop;
+  animation-duration: 1s;
+}
+.vitrine__image {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.vitrine__title {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  color: rgb(226, 95, 19);
+}
+.vitrine__desc {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.vitrine__button {
+  background-color: rgb(226, 95, 19);
+  border-radius: 1rem;
+  border: 1px solid black;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+#como-funciona h1 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+.steps__item {
+  padding: 10px;
+  border-radius: 12px;
+  background-color: white;
+  position: relative;
+}
+.steps__item:nth-last-child(1) {
+  animation: firstItem;
+  animation-duration: 1s;
+}
+.steps__item:nth-last-child(2) {
+  animation: firstItem;
+  animation-duration: 2s;
+}
+.steps__item:nth-last-child(3) {
+  animation: firstItem;
+  animation-duration: 3s;
+}
+.steps__item:nth-last-child(4) {
+  animation: firstItem;
+  animation-duration: 4s;
+}
+.steps__item:nth-last-child(5) {
+  animation: firstItem;
+  animation-duration: 5s;
+}
+.steps__item:hover {
+  top: -1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

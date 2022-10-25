@@ -85,7 +85,8 @@ footer {
 }
 .sobre__container {
   background-color: white;
-  width: 90%;
+  border-radius: 12px;
+  width: 89%;
   padding: 10px;
 }
 
@@ -123,7 +124,12 @@ footer {
   font-size: 15px;
   text-decoration: none;
   align-self: center;
+  -webkit-box-shadow: 4px 1px 10px 3px #000000;
+  box-shadow: 4px 1px 10px 3px #000000;
   margin-top: 10px;
+}
+.vitrine__button:hover {
+  background-color: rgb(1, 255, 22);
 }
 
 /*# sourceMappingURL=styles.css.map */

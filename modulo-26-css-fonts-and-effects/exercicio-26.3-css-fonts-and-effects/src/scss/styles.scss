@@ -1,19 +1,16 @@
-@import './vars';
 @import './reset';
+@import './vars';
 @import './fonts';
-
-//@import url('https://fonts.googleapis.com/css2? família=Fasthand&display=swap');
+@import './animations';
 
 html {
-    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
-body {
-    font-family: kg_happyregular;
-    text-shadow: 1px 1px 4px #000000;
+body{
     background-color: $bg-color;
+    font-family: $font-default;
 }
-
 
 h1{
     text-align: center;
@@ -26,14 +23,18 @@ h2{
     margin-top: 4rem;
 }
 
-@import './header';
-
+#root,
 header,
 section,
 footer{
     display: block;
     float: left;
     width: 100%;
+}
+
+section {
+    padding: 1rem 0;
+    margin: 0;
 }
 
 .container{
@@ -43,15 +44,10 @@ footer{
     max-width: 90vw;
 }
 
-.sobre{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    &__container{
-        background-color: $bg-color-2;
-        width: 90%;
-        padding: 10px;
-    }
-}
-
+@import './header';
+@import './nav';
+@import './sobre';
+@import './produtos';
 @import './vitrine';
+@import './como-funciona';
+@import './steps';
