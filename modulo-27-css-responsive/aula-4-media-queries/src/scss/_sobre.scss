@@ -1,0 +1,21 @@
+#sobre{
+    background-color: none;
+    .container{
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .1);
+        border-radius: .5rem;
+        padding: 0 2rem 2rem;
+    }
+
+    article{
+        h1{
+            color: rgb(226, 95, 19);
+            text-align: left;
+            font-size: 1.5rem;
+        }
+        p{
+            color: $color;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import './reset';
+@import './vars';
+@import './fonts';
+@import './animations';
+
+@viewport{
+    width: device-width;
+    zoom: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $bg-color;
+    font-family: $font-default;
+}
+
+h1{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 6px;
+    color: $color;
+}
+
+h2{
+    margin-top: 4rem;
+}
+
+#root,
+header,
+section,
+footer{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+section {
+    padding: 1rem 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+
+    @media (max-width:768px){
+        max-width: 99%;
+    }
+
+    @media (min-width:1024px){
+        background-color: red;
+        max-width: 100%;
+    }
+}
+
+@import './header';
+@import './nav';
+@import './sobre';
+@import './produtos';
+@import './vitrine';
+@import './como-funciona';
+@import './steps';
