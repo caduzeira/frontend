@@ -1,0 +1,74 @@
+@import './animate';
+
+#produtos{
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .vitrine{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 5rem;
+            margin-top: 1.5rem;
+            @media(max-width:1230px){
+                grid-template-columns: repeat(2,1fr);
+                width: 100%;
+                padding: 5px;
+            }
+            @media(max-width:700px){
+                grid-template-columns: repeat(1,1fr);
+                width: 100%;
+                padding: 5px;
+            }
+            &__item{
+                display: flex;
+                position: relative;
+                flex-flow: column;
+                align-items: center;
+                padding: 10px;
+                width: 100%;
+                justify-content: center;
+                background-color: rgb(204, 182, 255);
+                border-radius: 12px;
+                &:nth-last-child(1){
+                    animation: vitrine;
+                    animation-duration: 1s;
+                }
+                &:nth-last-child(2){
+                    animation: vitrine;
+                    animation-duration: 2s;
+                }
+                &:nth-last-child(3){
+                    animation: vitrine;
+                    animation-duration: 3s;
+                }
+                &:nth-last-child(4){
+                    animation: vitrine;
+                    animation-duration: 4s;
+                }
+                &:nth-last-child(5){
+                    animation: vitrine;
+                    animation-duration: 5s;
+                }
+                &--image{
+                    &:nth-last-child(1){
+                        animation: image;
+                        animation-duration: 2s;
+                    }
+                }
+                &--button{
+                    background-color:rgb(209, 136, 1);
+                    padding: 10px;
+                    border-radius: 12px;
+                    text-decoration: none;
+                    margin-top: 10px;
+                    color: white;
+                    &:hover{
+                        padding: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

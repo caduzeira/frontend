@@ -3,7 +3,6 @@ header{
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-
         .hero{
             align-items: flex-end;
             background-image: url('../img/banner-lance-me.png');
@@ -18,6 +17,14 @@ header{
                 padding: 1rem 0 0;
                 text-align: center;
                 width: 100%;
+            }
+
+            @media (max-width:767px){
+                img{
+                    width: 200%;
+                    position: relative;
+                    margin-left: -50%;
+                }
             }
         }
     }

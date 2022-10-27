@@ -1,0 +1,37 @@
+header{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #26166E;
+        width: 100%;
+        padding: 10px;
+        @media (max-width:767px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .logo{
+        color: white;
+        font-size: 1.5rem;
+        @media (max-width:767px){
+            
+        }
+    }
+    .nav{
+        @media (max-width:767px){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        &__item{
+            text-decoration: none;
+            margin-left: 15px;
+            color: white;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}

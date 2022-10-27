@@ -72,8 +72,14 @@
   width: 99.96;
 }
 
+@media (max-width: 767px) {
+  [class*=col-] {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 .bg-red {
-  background-color: rgba(255, 0, 0, 0.2);
   height: 100vh;
   width: 98%;
   margin: 0 auto;
@@ -169,6 +175,13 @@ header .container .hero h1 {
   text-align: center;
   width: 100%;
 }
+@media (max-width: 767px) {
+  header .container .hero img {
+    width: 200%;
+    position: relative;
+    margin-left: -50%;
+  }
+}
 
 nav {
   display: flex;
@@ -220,6 +233,11 @@ nav .item:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+}
+@media (max-width: 767px) {
+  .vitrine {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .vitrine__item {
   background-color: white;
@@ -281,6 +299,11 @@ nav .item:hover {
   margin-top: 4rem;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .steps {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .steps__item {
   padding: 10px;
   border-radius: 12px;
@@ -309,6 +332,18 @@ nav .item:hover {
 }
 .steps__item:hover {
   top: -1rem;
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  body {
+    font-size: 1.6rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .nav {
+    font-size: 0.6rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
